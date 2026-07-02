@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "tutorialmod",
+	"version": "${version}",
+	"name": "Tutorial Mod",
+	"description": "This is my first ever MOD by Jobobear16!",
+	"authors": [
+		"Jobobear16!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/JoboBear16/Fabric-Tutorial-1.21.X"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/tutorialmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.jobobear16.tutorialmod.TutorialMod"
+		],
+		"fabric-datagen": [
+			"net.jobobear16.tutorialmod.TutorialModDataGenerator"
+		],
+		"client": [
+			"net.jobobear16.tutorialmod.TutorialModClient"
+		]
+	},
+	"mixins": [
+		"tutorialmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
